@@ -2481,7 +2481,7 @@ span {
   width: 150px;
 }
 .header-main.style-1 {
-  padding: 10px 20px;
+  padding: 20px 20px;
   background: var(--pp-white);
   border-radius: 100px;
 }
@@ -6584,3 +6584,14 @@ span {
 .progress-value.style-two { width: 80%; }
 .progress-value.style-three { width: 85%; }
 .progress-value.style-four { width: 90%; }
+
+.offcanvas__logo img {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-white {
+  filter: brightness(0) invert(1) !important;
+}
