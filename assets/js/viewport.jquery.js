@@ -1,9 +1,4 @@
-/* ====================================================
- * jQuery Is In Viewport.
- * https://github.com/frontid/jQueryIsInViewport
- * Marcelo IvÃ¡n Tosco (capynet)
- * Inspired on https://stackoverflow.com/a/40658647/1413049
- * ==================================================== */
+
 !function ($) {
   'use strict'
 
@@ -16,11 +11,7 @@
 
   Class.prototype = {
 
-    /**
-     * Checks if the element is in.
-     *
-     * @returns {boolean}
-     */
+
     isIn: function isIn() {
       var _self = this;
       var $win = $(window);
@@ -31,9 +22,7 @@
       return elementBottom > viewportTop && elementTop < viewportBottom;
     },
 
-    /**
-     * Launch a callback indicating when the element is in and when is out.
-     */
+
     watch: function () {
       var _self = this;
       var _isIn = false;
@@ -56,8 +45,7 @@
 
   };
 
-  // jQuery plugin.
-  //-----------------------------------------------------------
+
   $.fn.isInViewport = function (cb) {
     return this.each(function () {
       var $element = $(this);

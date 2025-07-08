@@ -6,9 +6,7 @@
   
     $documentOn.ready( function() {
   
-      /* ================================
-       Mobile Menu Js Start
-    ================================ */
+   
     
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',
@@ -16,9 +14,7 @@
         meanExpand: ['<i class="far fa-plus"></i>'],
     });
     
-     /* ================================
-       Sidebar Toggle Js Start
-    ================================ */
+  
 
       $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
         $(".offcanvas__info").removeClass("info-open");
@@ -29,9 +25,7 @@
         $(".offcanvas__overlay").addClass("overlay-open");
       });
       
-       /* ================================
-       Body Overlay Js Start
-    ================================ */
+  
 
       $(".body-overlay").on("click", function () {
         $(".offcanvas__area").removeClass("offcanvas-opened");
@@ -39,9 +33,7 @@
         $(".body-overlay").removeClass("opened");
       });
   
-      /* ================================
-       Sticky Header Js Start
-    ================================ */
+   
 
       $windowOn.on("scroll", function () {
         if ($(this).scrollTop() > 250) {
@@ -50,10 +42,7 @@
           $("#header-sticky").removeClass("sticky");
         }
       });      
-      
-       /* ================================
-       Video & Image Popup Js Start
-    ================================ */
+
 
       $(".img-popup").magnificPopup({
         type: "image",
@@ -67,24 +56,18 @@
         callbacks: {},
       });
   
-      /* ================================
-       Counterup Js Start
-    ================================ */
+    
 
       $(".pp-count").counterUp({
         delay: 15,
         time: 4000,
       });
   
-      /* ================================
-       Wow Animation Js Start
-    ================================ */
+
 
       new WOW().init();
   
-      /* ================================
-       Nice Select Js Start
-    ================================ */
+
 
     if ($('.single-select').length) {
         $('.single-select').niceSelect();
@@ -93,9 +76,7 @@
     
 
 
-    /* ================================
-       Pp-Brand Slider Js Start
-    ================================ */
+
     if ($('.pp-brand-slider').length > 0) {
       const ppBrandSlider = new Swiper(".pp-brand-slider", {
         spaceBetween: 100,
@@ -125,9 +106,7 @@
       });
     }
 
-    /* ================================
-       Pp-Testimonial Slider Js Start
-    ================================ */
+
     if ($('.pp-testimonial-slider').length > 0) {
       const PpTestimonialSlider = new Swiper(".pp-testimonial-slider", {
         spaceBetween: 100,
@@ -266,9 +245,7 @@
             });
         }
 
-   /* ================================
-       Parallaxie Js Start
-    ================================ */
+
 
         if ($('.parallaxie').length && $(window).width() > 991) {
             if ($(window).width() > 768) {
@@ -280,9 +257,7 @@
         }
         
 
-     /* ================================
-       Mouse Cursor Animation Js Start
-    ================================ */
+
 
     if ($(".mouseCursor").length > 0) {
         function itCursor() {
@@ -329,9 +304,7 @@
         itCursor();
       }
   
-      /* ================================
-       Search Popup Toggle Js Start
-    ================================ */
+
 
     if ($(".search-toggler").length) {
         $(".search-toggler").on("click", function(e) {
@@ -343,9 +316,7 @@
 
 
 
-   /* ================================
-       Back To Top Button Js Start
-    ================================ */
+
 
     $windowOn.on('scroll', function() {
         if ($(this).scrollTop() > 20) {
@@ -363,12 +334,11 @@
 
 
     
-    }); // End Document Ready Function
-
+    });
 
     function loader() {
         $(window).on('load', function() {
-            // Animate loader off screen
+            
             $(".preloader").addClass('loaded');                    
             $(".preloader").delay(600).fadeOut();                       
         });
@@ -377,4 +347,4 @@
     loader();
 
   
-  })(jQuery); // End jQuery
+  })(jQuery); 
