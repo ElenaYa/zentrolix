@@ -6198,7 +6198,7 @@ span {
     width: 0;
   }
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 @keyframes load3 {
@@ -6206,7 +6206,7 @@ span {
     width: 0;
   }
   100% {
-    width: 55%;
+    width: 85%;
   }
 }
 
@@ -6577,4 +6577,10 @@ span {
     width: 100%;
     justify-content: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Прогресс-бары для секции команды Zentrolix */
+.progress-value { width: 95%; }
+.progress-value.style-two { width: 80%; }
+.progress-value.style-three { width: 85%; }
+.progress-value.style-four { width: 90%; }

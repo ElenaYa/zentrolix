@@ -9,6 +9,7 @@
         <meta name="author" content="Zentrolix">
         <meta name="description" content="Página no encontrada - Zentrolix | Plataforma educativa de servicios de juegos en la nube en Argentina">
         <meta name="keywords" content="404, página no encontrada, Zentrolix, gaming en la nube, Argentina">
+        <meta name="robots" content="index, follow">
         <!-- ======== Page title ============ -->
         <title>Página no encontrada | Zentrolix</title>
         <!--<< Favcion >>-->
@@ -376,23 +377,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Search Section -->
-                <div class="row mt-5">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="text-center wow fadeInUp" data-wow-delay=".7s">
-                            <h4 class="mb-4">¿O prefieres buscar algo específico?</h4>
-                            <div class="pp-newsletter-form">
-                                <form action="#" class="d-flex gap-3 justify-content-center flex-wrap">
-                                    <input type="text" placeholder="Buscar cursos, guías..." class="form-control" style="max-width: 400px;">
-                                    <button type="submit" class="pp-theme-btn">
-                                        <i class="fa-solid fa-search"></i> Buscar
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             
             </div>
         </section>
          <!-- Pp Footer Section Start -->
@@ -408,9 +393,9 @@
                                 Recibe guías, novedades y consejos exclusivos. Deja tu e-mail y estarás al tanto!
                             </p>
                         </div>
-                        <form action="#" class="wow fadeInUp" data-wow-delay=".5s">
+                        <form action="#" class="wow fadeInUp" data-wow-delay=".5s" id="newsletter-form">
                             <div class="form-clt">
-                                <input type="email" name="email" id="email" placeholder="Tu correo electrónico">
+                                <input type="email" name="email" placeholder="Tu correo electrónico" required>
                                 <button type="submit" class="pp-theme-btn">
                                    <i class="fa-solid fa-paper-plane"></i> Suscribirse
                                 </button>
@@ -541,6 +526,8 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
+        <!-- Подключение ajax-mail.js после wow.min.js и до main.js -->
+        <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
     </body>

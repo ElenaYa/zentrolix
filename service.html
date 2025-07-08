@@ -9,6 +9,17 @@
         <meta name="author" content="Zentrolix">
         <meta name="description" content="Cursos de Zentrolix: aprende a elegir, configurar y optimizar servicios de juegos en la nube. Guías y materiales para principiantes en Argentina.">
         <meta name="keywords" content="Zentrolix, cursos, guías, juegos en la nube, cloud gaming, Argentina, aprender, principiantes, plataformas educativas">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Cursos — Zentrolix">
+        <meta property="og:description" content="Cursos de Zentrolix: aprende a elegir, configurar y optimizar servicios de juegos en la nube. Guías y materiales para principiantes en Argentina.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://zentrolix.com/service.html">
+        <meta property="og:image" content="https://zentrolix.com/assets/img/logo/black-logo.svg">
+        <meta property="og:site_name" content="Zentrolix">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Cursos — Zentrolix">
+        <meta name="twitter:description" content="Cursos de Zentrolix: aprende a elegir, configurar y optimizar servicios de juegos en la nube. Guías y materiales para principiantes en Argentina.">
+        <meta name="twitter:image" content="https://zentrolix.com/assets/img/logo/black-logo.svg">
         <!-- ======== Page title ============ -->
         <title>Cursos — Zentrolix</title>
         <!--<< Favcion >>-->
@@ -591,9 +602,9 @@
                                 Recibe guías, novedades y consejos exclusivos. Deja tu e-mail y estarás al tanto!
                             </p>
                         </div>
-                        <form action="#" class="wow fadeInUp" data-wow-delay=".5s">
+                        <form action="#" class="wow fadeInUp" data-wow-delay=".5s" id="newsletter-form">
                             <div class="form-clt">
-                                <input type="email" name="email" id="email" placeholder="Tu correo electrónico">
+                                <input type="email" name="email" placeholder="Tu correo electrónico" required>
                                 <button type="submit" class="pp-theme-btn">
                                    <i class="fa-solid fa-paper-plane"></i> Suscribirse
                                 </button>
@@ -724,10 +735,12 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
+        <!-- Подключение ajax-mail.js после wow.min.js y до main.js -->
+        <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
         <script>
-// JS для переключения гайдов
+// JS para переключения гайдов
 const menuLinks = document.querySelectorAll('.course-link');
 const blocks = document.querySelectorAll('.course-block');
 menuLinks.forEach(link => {

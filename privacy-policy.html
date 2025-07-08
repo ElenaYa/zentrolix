@@ -9,6 +9,7 @@
         <meta name="author" content="Zentrolix">
         <meta name="description" content="Política de privacidad de Zentrolix - Plataforma educativa sobre servicios de juegos en la nube en Argentina">
         <meta name="keywords" content="política de privacidad, Zentrolix, privacidad, cookies, Argentina, gaming en la nube">
+        <meta name="robots" content="index, follow">
         <!-- ======== Page title ============ -->
         <title>Política de Privacidad | Zentrolix</title>
         <!--<< Favcion >>-->
@@ -410,9 +411,9 @@
                                 Recibe guías, novedades y consejos exclusivos. Deja tu e-mail y estarás al tanto!
                             </p>
                         </div>
-                        <form action="#" class="wow fadeInUp" data-wow-delay=".5s">
+                        <form action="#" class="wow fadeInUp" data-wow-delay=".5s" id="newsletter-form">
                             <div class="form-clt">
-                                <input type="email" name="email" id="email" placeholder="Tu correo electrónico">
+                                <input type="email" name="email" placeholder="Tu correo electrónico" required>
                                 <button type="submit" class="pp-theme-btn">
                                    <i class="fa-solid fa-paper-plane"></i> Suscribirse
                                 </button>
@@ -542,6 +543,8 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
+        <!-- Подключение ajax-mail.js после wow.min.js и до main.js -->
+        <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
     </body>
