@@ -153,7 +153,7 @@ function user(): array {
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <img src="assets/img/logo/logo.png" alt="logo-img">
                                 </a>
                             </div>
@@ -213,10 +213,10 @@ function user(): array {
                 <div class="mega-menu-wrapper">
                     <div class="header-main style-1">
                         <div class="logo">
-                            <a href="index.html" class="header-logo">
+                            <a href="/" class="header-logo">
                                 <img src="assets/img/logo/logo.png" alt="logo-img">
                             </a>
-                            <a href="index.html" class="header-logo-2">
+                            <a href="/" class="header-logo-2">
                                 <img src="assets/img/logo/logo.png" alt="logo-img" class="logo-white">
                             </a>
                         </div>
@@ -225,7 +225,7 @@ function user(): array {
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="has-dropdown active menu-thumb">
-                                            <a href="index.html">
+                                            <a href="/">
                                                 Inicio
                                             </a>
                                          
@@ -727,7 +727,7 @@ function user(): array {
                 <div class="col-xl-5 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="pp-footer-widget-items">
                         <div class="pp-widget-head">
-                            <a href="index.html" class="pp-footer-logo">
+                            <a href="/" class="pp-footer-logo">
                                 <img src="assets/img/logo/logo.png" alt="img" class="logo-white">
                             </a>
                         </div>
@@ -746,7 +746,7 @@ function user(): array {
                         </div>
                         <ul class="pp-list-area">
                             <li>
-                                <a href="index.html">
+                                <a href="/">
                                     Inicio
                                 </a>
                             </li>
