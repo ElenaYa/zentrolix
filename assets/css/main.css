@@ -1,41 +1,4 @@
-/*
-Theme Name: Xriders 
-Author: Pixel-plus 
-Author URI: https://themeforest.net/user/Pixel-plus /portfolio
-Description: Cloudly - Sass And software Html Template
-Service Html Template 
-Version: 1.0.0
-*/
-/*CSS Table Of Content Ends Here*/
-/*
---------------------------------------------------------------
-[Table of Contents]
---------------------------------------------------------------
-01. Variables & Mixins
-02. Typography
-03. Buttons
-04. About 
-05. Animation 
-06. Brand 
-07. Contact
-08. Cta
-09. Faq
-10. Feature
-11. Footer
-12. Header
-13. Helping
-14. Hero
-15. Meanmenu
-16. News
-17. Preloader
-18. Pricing
-19. Project
-20. Section
-21. Service
-22. Team
-23. Testimonial
---------------------------------------------------------------
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
@@ -116,9 +79,7 @@ Version: 1.0.0
   color: var(--pp-theme);
 }
 
-/* --------------------------------------------
-    Template Default Fonts & Fonts Styles
- ---------------------------------------------- */
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -725,7 +686,6 @@ span {
     transform: translatey(0px);
   }
 }
-/*img-animation**********************/
 .img-custom-anim-right {
   animation: img-anim-right 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
@@ -6331,7 +6291,6 @@ span {
   color: var(--pp-white);
 }
 
-/* Success Registration Popup */
 .success-popup-overlay {
   position: fixed;
   top: 0;
@@ -6546,7 +6505,6 @@ span {
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 575px) {
   .success-popup-container {
     margin: 20px;
@@ -6594,4 +6552,6 @@ span {
 
 .logo-white {
   filter: brightness(0) invert(1) !important;
+  max-width: 120px;
+  height: auto;
 }
